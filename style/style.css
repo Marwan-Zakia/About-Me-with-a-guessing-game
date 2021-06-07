@@ -1,0 +1,23 @@
+* {background-color: lightgray;}
+header img { 
+width: 100px;
+height: 100px; }
+
+header nav ul li {
+    border: 3px;
+    padding: 30px;
+  }
+h1{
+font-size: 30px;
+font-weight: 700;
+line-height: 2;
+background-color: darkgrey;
+}
+p {
+
+ line-height: 3;
+}  
+
+footer{
+float: right;
+}
