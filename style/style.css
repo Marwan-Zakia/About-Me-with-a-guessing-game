@@ -2,11 +2,11 @@
 header img { 
 width: 100px;
 height: 100px; }
-
+/* 
 header nav ul li {
     border: 3px;
     padding: 30px;
-  }
+  } */
 h1{
 font-size: 30px;
 font-weight: 700;
@@ -21,3 +21,11 @@ p {
 footer{
 float: right;
 }
+ol li{  
+   list-style: decimal;  
+    margin-left: 25px; 
+     
+   }  
+main ul li
+{        background-color: rgb(25, 102, 98);   
+ }
