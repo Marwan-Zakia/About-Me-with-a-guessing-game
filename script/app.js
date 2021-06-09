@@ -120,33 +120,57 @@
 
 
 
-function userQuestion(question, goodAnswer, notgoodanswer)
-let userInput;
+// function userQuestion(question, goodAnswer,notgoodanswer)
+// let favPlaces;
 
-let favPlaces = ['amman', 'irbid', 'jrash', 'alzaraqa', 'petra', 'aqaba'];
+// let favPlaces = ['amman', 'irbid', 'jrash', 'alzaraqa', 'petra', 'aqaba'];
 
-for (let i = 0; i < 6; i++) {
-    let placesInjordan = prompt('what do think my favorite cities in jordan')
+// for (let i = 0; i < 6; i++) {
 
-    {
-        for (let j = 0; j < favPlaces.length; j++)
-
-
-            if (placesInjordan === favPlaces[j]) {
-                alert(goodAnswer);
-                rightAnswer++;
-                console.log([i])
-                break;
-
-            }
-            else (favPlaces != placesInjordan); {
-            alert(notGoodAnswer);
-        }
+//     let placesInjordan = prompt('what do think my favorite cities in jordan');
+//     // for (let i = 0; i < 6; i++)
+//     {for(let j =0;j < favPlaces.length; j++)
 
 
-    }
-}
-userQuestion('what do think my favorite cities in jordan', 'good job', 'please try agin');
+//     if ( placesInjordan === favPlaces [j]) {
+//         alert('good job');
+//         rightAnswer++;
+//         console.log([i])
+//         break;
+
+//     }
+//     else (favPlaces != placesInjordan); {
+//         alert('please try agin');
+//     }
+
+
+// }
+// }
+
+// let favPlaces = ['amman', 'irbid', 'jrash', 'alzaraqa', 'petra', 'aqaba'];
+
+// for (let i = 0; i < 6; i++) {
+//     let userInput = prompt('what do think my favorite cities in jordan');
+
+//     {
+//         for (let j = 0; j < favPlaces.length; j++)
+
+
+//             if (userInput === favPlaces[j]) {
+//                 alert(goodAnswer);
+//                 rightAnswer++;
+//                 // console.log([i])
+//                 break;
+
+//             }
+//             else (userInput !== favPlaces[j]); {
+//             alert(notGoodAnswer);
+//         }
+
+
+//     }
+// }
+// userQuestion('what do think my favorite cities in jordan', 'good job', 'please try agin');
 
 
 
