@@ -1,94 +1,200 @@
 'use strict';
-let rightAnswer = 0;
+let rightAnswer=0;
+let allQuiz =prompt('do you want to be qustioned ?').toLowerCase();
+if (allQuiz === 'yes' || allQuiz === 'y') {
 {
-function userQuestion(question,correctAns,unCorrectAns,) {
-         let userInput;
-        // for(i = 0; i < 5 ; i++) {
-        //       let  userInput = prompt(question)
+        function userQuestion(question,correctAns,unCorrectAns,) {
                 
-        do {
-                userInput = prompt(question);
-        } while (userInput !== 'yes' && userInput !== 'y' && userInput !== 'no' && userInput !== 'n' && userInput !== null );
-
-        if (userInput === 'yes' || userInput === 'y') {
-                  alert(correctAns); rightAnswer++; return; 
-                 
-        }
-        else (userInput === 'no' || userInput === 'n'|| null  ); { alert(unCorrectAns);  }
+                    let  userInput = prompt(question).toLowerCase();
+                        
+               
+                if (userInput === 'yes' || userInput === 'y') {
+                            alert(correctAns);
+                            console.log(userInput);
+                            rightAnswer++;
+                        } else if (userInput === 'no' || userInput === 'n') {
+                            alert(unCorrectAns);
+                        } else {
+                            alert('please type (yes),(no) or (y),(n)');
         
-        } 
-userQuestion("do you think this site will be intersting ", 'very intersting indeed', 'huh... I find your answer intersting',);
-userQuestion('do you think i like to watch Movies ', 'WRONG', 'yea i like intractive stuff');
-userQuestion('do you think i like video games', 'HOW DID YOU KNOW', 'wrong answer');
-userQuestion('do you think i like bad memes', 'YEAH THE WORSE THE BETTER', 'wrong answer');
-userQuestion('did you enjoy you your time in this website ', 'thats great', 'its ok');
-}
-{
-function userQuestion(question, goodAnswer, notgoodanswer,wrongeanswer ) {
-        //let favPlaces;
-
-        for (let i = 0; i < 4; i++) {
-                 let myAge = prompt(question)
-                  if (myAge == 23) {
-                         alert(goodAnswer);
-                         rightAnswer++;
-                         console.log([i])
-                         break;
-
-                     }
-                     else if (myAge > 24 ) {
-                         alert(notgoodanswer);
-                    }
-
-                     else (myAge < 23 && myAge > 15); {
-
-                        alert(wrongeanswer);
-                     }
-
-                 }
-                alert('im 23 years old')
-                }
-                userQuestion('how old do you think i am', 'you are absolutely CORRECT', 'TOO HIGH','TOO LOW');
-}
-{
-function userQuestion(question, goodAnswer, notgoodanswer) {
-        //let favPlaces;
-
-        let favPlaces = ['amman', 'irbid', 'jrash', 'alzaraqa', 'petra', 'aqaba'];
-
-        for (let i = 0; i < 3; i++) {
-
-                let placesInjordan = prompt(question);
-
-                {
-                        for (let j = 0; j < favPlaces.length; j++)
-                                // for (let i = 0; i < 6; i++)
-
-
-
-                                if (placesInjordan === favPlaces[j]) {
-                                        alert(goodAnswer);
-                                        rightAnswer++;
-                                        console.log([i])
-                                        return;
-
-                                }
-                                else (favPlaces != placesInjordan); {
-                                alert(notgoodanswer);
                         }
-
-
                 }
-
+           
+                        
+                
+                // } 
+        userQuestion("do you think this site will be intersting ", 'very intersting indeed', 'huh... I find your answer intersting',);
+        userQuestion('do you think i like to watch Movies ', 'WRONG', 'yea i like intractive stuff');
+        userQuestion('do you think i like video games', 'HOW DID YOU KNOW', 'wrong answer');
+        userQuestion('do you think i like bad memes', 'YEAH THE WORSE THE BETTER', 'wrong answer');
+        userQuestion('did you enjoy you your time in this website ', 'thats great', 'its ok');
         }
+        {
+        function userQuestion(question, goodAnswer, notgoodanswer,wrongeanswer ) {
+                //let favPlaces;
+        
+                for (let i = 0; i < 4; i++) {
+                         let myAge = prompt(question)
+                          if (myAge == 23) {
+                                 alert(goodAnswer);
+                                 rightAnswer++;
+                                 console.log([i])
+                                 break;
+        
+                             }
+                             else if (myAge > 24 ) {
+                                 alert(notgoodanswer);
+                            }
+        
+                             else (myAge < 23 && myAge > 15); {
+        
+                                alert(wrongeanswer);
+                             }
+        
+                         }
+                        alert('im 23 years old')
+                        }
+                        userQuestion('how old do you think i am', 'you are absolutely CORRECT', 'TOO HIGH','TOO LOW');
+        
+                 } {
+     {   function userQuestion(question, goodAnswer, notgoodanswer) {
+                //let favPlaces;
+        
+                let favPlaces = ['amman', 'irbid', 'jrash', 'alzaraqa', 'petra', 'aqaba'];
+        
+                for (let i = 0; i < 3; i++) {
+        
+                        let placesInjordan = prompt(question).toLowerCase();
+        
+                        {
+                                for (let j = 0; j < favPlaces.length; j++)
+                                        // for (let i = 0; i < 6; i++)
+        
+        
+        
+                                        if (placesInjordan === favPlaces[j]) {
+                                                alert(goodAnswer);
+                                                rightAnswer++;
+                                                console.log([i])
+                                                return;
+        
+                                        }
+                                        else (favPlaces != placesInjordan); {
+                                        alert(notgoodanswer);
+                                }
+        
+                                    
+                        }
+                       
+                }
+                
+              
+        }
+        userQuestion('what do think my favorite cities in jordan', 'good job', 'please try agin');   }  }
+        
+        
+         
+        alert('the cites are amman,irbid, jrash, alzaraqa, petra, aqaba')
+
+        
+    } else if (allQuiz === 'no' || allQuiz === 'n') {
+        alert('alright');
+     }
+alert('your score is ' + rightAnswer) 
+// let rightAnswer = 0;
+// {
+// function userQuestion(question,correctAns,unCorrectAns,) {
+        
+//             let  userInput = prompt(question).toLowerCase();
+                
+       
+//         if (userInput === 'yes' || userInput === 'y') {
+//                     alert(correctAns);
+//                     console.log(userInput);
+//                     rightAnswer++;
+//                 } else if (userInput === 'no' || userInput === 'n') {
+//                     alert(unCorrectAns);
+//                 } else {
+//                     alert('please type (yes),(no) or (y),(n)');
+
+//                 }
+//         }
+   
+                
+        
+//         // } 
+// userQuestion("do you think this site will be intersting ", 'very intersting indeed', 'huh... I find your answer intersting',);
+// userQuestion('do you think i like to watch Movies ', 'WRONG', 'yea i like intractive stuff');
+// userQuestion('do you think i like video games', 'HOW DID YOU KNOW', 'wrong answer');
+// userQuestion('do you think i like bad memes', 'YEAH THE WORSE THE BETTER', 'wrong answer');
+// userQuestion('did you enjoy you your time in this website ', 'thats great', 'its ok');
+// }
+// {
+// function userQuestion(question, goodAnswer, notgoodanswer,wrongeanswer ) {
+//         //let favPlaces;
+
+//         for (let i = 0; i < 4; i++) {
+//                  let myAge = prompt(question)
+//                   if (myAge == 23) {
+//                          alert(goodAnswer);
+//                          rightAnswer++;
+//                          console.log([i])
+//                          break;
+
+//                      }
+//                      else if (myAge > 24 ) {
+//                          alert(notgoodanswer);
+//                     }
+
+//                      else (myAge < 23 && myAge > 15); {
+
+//                         alert(wrongeanswer);
+//                      }
+
+//                  }
+//                 alert('im 23 years old')
+//                 }
+//                 userQuestion('how old do you think i am', 'you are absolutely CORRECT', 'TOO HIGH','TOO LOW');
+// }
+// {
+// function userQuestion(question, goodAnswer, notgoodanswer) {
+//         //let favPlaces;
+
+//         let favPlaces = ['amman', 'irbid', 'jrash', 'alzaraqa', 'petra', 'aqaba'];
+
+//         for (let i = 0; i < 3; i++) {
+
+//                 let placesInjordan = prompt(question).toLowerCase();
+
+//                 {
+//                         for (let j = 0; j < favPlaces.length; j++)
+//                                 // for (let i = 0; i < 6; i++)
 
 
-}
 
-userQuestion('what do think my favorite cities in jordan', 'good job', 'please try agin'); 
-}
+//                                 if (placesInjordan === favPlaces[j]) {
+//                                         alert(goodAnswer);
+//                                         rightAnswer++;
+//                                         console.log([i])
+//                                         return;
+
+//                                 }
+//                                 else (favPlaces != placesInjordan); {
+//                                 alert(notgoodanswer);
+//                         }
+
+
+//                 }
+
+//         }
+
+
+// }
+
+// userQuestion('what do think my favorite cities in jordan', 'good job', 'please try agin'); 
+// }
  
-alert('the cites are amman,irbid, jrash, alzaraqa, petra, aqaba')
+// alert('the cites are amman,irbid, jrash, alzaraqa, petra, aqaba')
 
  
 
