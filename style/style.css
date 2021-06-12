@@ -1,22 +1,39 @@
 * {background-color: lightgray;}
+header{
+  background-color: black;
+  height: 120px;
+}
 header img { 
-width: 100px;
-height: 100px; }
-/* 
-header nav ul li {
+ width: 100px; 
+height: 100px; 
+
+}
+ nav ul li {
+   height: auto;
     border: 3px;
     padding: 30px;
-  } */
-h1{
+   position: relative; 
+   color: blanchedalmond;
+   /* /* text-align: center; */
+ }
+   
+h1,h2{
 font-size: 30px;
 font-weight: 700;
 line-height: 2;
-background-color: darkgrey;
+position: relative;
+  margin: auto;
+  text-align: center;
+  line-height: 3;
+
 }
 p {
-
- line-height: 3;
-}  
+  position: relative;
+  margin: auto;
+  text-align: center;
+  line-height: 3;
+}
+ 
 
 footer{
 float: right;
@@ -26,6 +43,24 @@ ol li{
     margin-left: 25px; 
      
    }  
-main ul li
-{        background-color: rgb(25, 102, 98);   
+/* main ul li
+{        background-color: rgb(25, 102, 98);    */
+
+ 
+ h3 {
+ font-size: 30px;
+font-weight: 700;
+line-height: 2;
+position: relative;
+  margin: auto;
+  line-height: 3;
+ }
+
+ footer{
+   height: auto;
+   background-color: black;
+   color:white ;
+   text-align: center;
+   position: relative;
+   margin: auto;
  }
